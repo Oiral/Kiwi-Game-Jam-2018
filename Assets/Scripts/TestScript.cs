@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour {
 
+    public MenuScript menuScript;
+
     Animator animator;
 	// Use this for initialization
 	void Start () {
@@ -12,9 +14,10 @@ public class TestScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             animator.SetTrigger("Lightning");
+            menuScript.DefeatBoss();
         }
 	}
 }
