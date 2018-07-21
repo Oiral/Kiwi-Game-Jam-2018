@@ -45,7 +45,7 @@ public class MenuScript : MonoBehaviour {
         {
             col.a += 0.1f;
             fadeImage.color = col;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
 
@@ -63,7 +63,7 @@ public class MenuScript : MonoBehaviour {
         {
             col.a -= 0.1f;
             fadeImage.color = col;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
         fadeImage.gameObject.SetActive(false);
     }

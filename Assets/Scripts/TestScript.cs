@@ -20,4 +20,15 @@ public class TestScript : MonoBehaviour {
             menuScript.DefeatBoss();
         }
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("She's touching me!");
+        //Replace Crossbow with explosion
+
+
+        animator.SetTrigger("Lightning");
+        menuScript.DefeatBoss();
+    }
+
 }
