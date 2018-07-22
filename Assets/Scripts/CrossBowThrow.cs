@@ -52,7 +52,7 @@ public class CrossBowThrow : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         GameObject explosion = Instantiate(explosionPrefab, other.gameObject.transform.position, Quaternion.identity, null);
-        Destroy(other.gameObject);
+        Destroy(gameObject);
         Destroy(explosion, 2);
     }
 }
