@@ -33,17 +33,20 @@ public class InventoryScript : MonoBehaviour {
 
 
 
-    public void PurchaseItem(Weapon weaponToAdd) 
+    public bool PurchaseItem(Weapon weaponToAdd) 
     {
         if (weaponToAdd.cost <= coins)
         {
             weaponInventory.Add(weaponToAdd);
             Debug.Log("You have purchased a " + weaponToAdd.name);
             coins -= weaponToAdd.cost;
+            UpdateVisualUI();
+            return true;                
         }else{
             Debug.Log("Not enough money to purchase");
+            return false;
         }
-        UpdateVisualUI();
+
     }
 
     public void RemoveItem(Weapon weaponToRemove)

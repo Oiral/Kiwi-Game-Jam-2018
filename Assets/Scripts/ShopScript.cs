@@ -33,18 +33,24 @@ public class ShopScript : MonoBehaviour
 
     public void BuyCrossbow(){
         //Maybe check if the player has enough money?
-        InventoryScript.instance.PurchaseItem(crossbow);
-        audioSource.PlayOneShot(clip);
+        if (InventoryScript.instance.PurchaseItem(crossbow))
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 
     public void BuySword(){
-        InventoryScript.instance.PurchaseItem(sword);
-        audioSource.PlayOneShot(clip);
+        if (InventoryScript.instance.PurchaseItem(sword))
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 
     public void BuyGoldenSword(){
-        InventoryScript.instance.PurchaseItem(goldenSword);
-        audioSource.PlayOneShot(clip);
+        if (InventoryScript.instance.PurchaseItem(goldenSword))
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
     #endregion
 }

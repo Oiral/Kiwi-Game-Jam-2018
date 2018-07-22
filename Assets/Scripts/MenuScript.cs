@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class MenuScript : MonoBehaviour {
 
     public Image fadeImage;
+    public AudioClip buttonPressSound;
+
 
     public void LoadMainScene(){
 
@@ -66,5 +68,9 @@ public class MenuScript : MonoBehaviour {
             yield return new WaitForSeconds(0.05f);
         }
         fadeImage.gameObject.SetActive(false);
+    }
+
+    public void PlayClick(){
+        GetComponent<AudioSource>().PlayOneShot(buttonPressSound);
     }
 }
