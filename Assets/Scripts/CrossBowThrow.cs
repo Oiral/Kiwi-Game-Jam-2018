@@ -8,6 +8,8 @@ public class CrossBowThrow : MonoBehaviour {
 
     public GameObject explosionPrefab;
 
+    public Weapon typeOfWeapon;
+
     public bool beingThrown = false;
     // Update is called once per frame
 
@@ -24,7 +26,6 @@ public class CrossBowThrow : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space)){
             beingThrown = true;
         }
-
 
         if (beingThrown){
 
@@ -53,6 +54,7 @@ public class CrossBowThrow : MonoBehaviour {
     {
         GameObject explosion = Instantiate(explosionPrefab, other.gameObject.transform.position, Quaternion.identity, null);
         Destroy(gameObject);
+
         Destroy(explosion, 2);
     }
 }

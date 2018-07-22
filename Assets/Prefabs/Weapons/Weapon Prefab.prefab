@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1324782328057944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.15, y: -2.03, z: 0}
+  m_LocalPosition: {x: -7.33, y: -2.03, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,6 +94,42 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.12133891
     - serializedVersion: 3
+      time: 0.28356594
+      value: 0.08629354
+      inSlope: -0.05447926
+      outSlope: -0.05447926
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.213559
+    - serializedVersion: 3
+      time: 0.438681
+      value: 0.087150455
+      inSlope: 0.0048661167
+      outSlope: 0.0048661167
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.35443726
+    - serializedVersion: 3
+      time: 0.60382336
+      value: 0.08130474
+      inSlope: -0.0054745884
+      outSlope: -0.0054745884
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.8082279
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.77194065
+      value: 0.08484768
+      inSlope: -0.15307227
+      outSlope: -0.15307227
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 0.99583334
       value: -0.0010809994
       inSlope: -0.3891597
@@ -108,8 +144,8 @@ MonoBehaviour:
   explosionPrefab: {fileID: 1760073400007608, guid: f321ef6cd30d84a50b3f910712de1719,
     type: 2}
   beingThrown: 0
-  scale: 10
-  totalFrames: 50
+  scale: 20
+  totalFrames: 100
 --- !u!212 &212535894615239172
 SpriteRenderer:
   m_ObjectHideFlags: 1

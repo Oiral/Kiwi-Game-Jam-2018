@@ -10,7 +10,7 @@ public class MenuScript : MonoBehaviour {
 
     public void LoadMainScene(){
 
-        StartCoroutine( FadeToScene(1));
+        StartCoroutine( FadeToScene(2));
 
     }
 
@@ -20,18 +20,18 @@ public class MenuScript : MonoBehaviour {
     }
 
     public void DefeatBoss(){
-        StartCoroutine(FadeToScene(2));
+        StartCoroutine(FadeToScene(3));
     }
 
     public void LoadMainMenu(){
-        StartCoroutine(FadeToScene(0));
+        StartCoroutine(FadeToScene(1));
     }
 
     IEnumerator FadeToScene(int sceneNumber){
 
         //Spawn fade the white out
         StartCoroutine(FadeIn());
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(sceneNumber);
 
     }
